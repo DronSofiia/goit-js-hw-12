@@ -130,6 +130,16 @@ button:hover{
     margin-top: 2px;
 }
 
+.load-more{
+    border-radius: 8px;
+        width: 91px;
+        height: 40px;
+        background-color: #4e75ff;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+}
+
 
 
 
