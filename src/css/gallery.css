@@ -59,7 +59,7 @@ placeholder{
     color: #808080;
 }
 
-button{
+button[type = "submite"]{
     border-radius: 8px;
     width: 91px;
     height: 40px;
@@ -130,7 +130,7 @@ button:hover{
     margin-top: 2px;
 }
 
-button .load-more{
+ .load-more{
     border-radius: 8px;
         width: 91px;
         height: 40px;
