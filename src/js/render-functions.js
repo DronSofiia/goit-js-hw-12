@@ -5,7 +5,8 @@ export const refs = {
     gallery: document.querySelector(".gallery"),
     loader: document.querySelector(".loader"),
     form: document.querySelector(".form"),
-    input: document.querySelector(".form").elements["search-text"]
+  input: document.querySelector(".form").elements["search-text"],
+  loadMoreBtn: document.querySelector(".load-more")
 }
 
 const lightbox = new SimpleLightbox('.gallery a', {
@@ -13,9 +14,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
     captionDelay: 250
 });
 
-export function clearGallery() {
-    refs.gallery.innerHTML = "";   
-}
+
 
 export function createGallery(images) {
     const markup = images.map(img => {
@@ -49,10 +48,22 @@ export function createGallery(images) {
     lightbox.refresh();
 }
 
+export function clearGallery() {
+  refs.gallery.innerHTML = "";   
+}
+
 export function showLoader() {
     refs.loader.classList.remove("hidden");   
 }
 
 export function hideLoader() {
     refs.loader.classList.add("hidden");      
+}
+
+export function showLoadMoreBtn() {
+  refs.loadMoreBtn.classList.remove("hidden");
+}
+
+export function hideLoadMoreBtn() {
+  refs.loadMoreBtn.classList.add("hidden")
 }
