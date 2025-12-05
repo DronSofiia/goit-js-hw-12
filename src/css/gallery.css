@@ -59,7 +59,7 @@ placeholder{
     color: #808080;
 }
 
-button[type = "submite"]{
+button{
     border-radius: 8px;
     width: 91px;
     height: 40px;
