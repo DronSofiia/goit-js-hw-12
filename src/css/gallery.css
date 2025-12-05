@@ -130,7 +130,7 @@ button:hover{
     margin-top: 2px;
 }
 
-.load-more{
+button .load-more{
     border-radius: 8px;
         width: 91px;
         height: 40px;
